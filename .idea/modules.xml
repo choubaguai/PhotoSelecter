@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoSelecter.iml" filepath="$PROJECT_DIR$/PhotoSelecter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoselecter/photoselecter.iml" filepath="$PROJECT_DIR$/photoselecter/photoselecter.iml" />
+    </modules>
+  </component>
+</project>
