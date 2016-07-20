@@ -1,8 +1,9 @@
 # PhotoSelecter
 高仿微信图片选择器
 使用方法如下：
-1.
 
+
+1.
 GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
