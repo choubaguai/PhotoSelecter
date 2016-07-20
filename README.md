@@ -2,7 +2,8 @@
 高仿微信图片选择器
 使用方法如下：
 1.
-mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+GridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (imagePaths.size() < IMAGE_SIZE && i == imagePaths.size()) {
@@ -21,7 +22,7 @@ mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     startActivityForResult(intent, REQUEST_PREVIEW_CODE);
                 }
             }
-        });
+});
         
     2.    
     @Override
