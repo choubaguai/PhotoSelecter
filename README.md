@@ -2,10 +2,12 @@
 高仿微信图片选择器
 使用方法如下：
 
-1.compile 'com.superbro:photoselecter:1.0.0'
+1.
+compile 'com.superbro:photoselecter:1.0.0'
 
 
-2. mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+2. 
+  mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (imagePaths.size() < IMAGE_SIZE && i == imagePaths.size()) {
@@ -26,7 +28,8 @@
             }
         });
 
-3. @Override
+3. 
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
@@ -43,4 +46,4 @@
         }
     }
 
-4.没有了，具体看源码，很简单的。
+4.  没有了，具体看源码，很简单的。
