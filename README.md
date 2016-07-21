@@ -4,4 +4,4 @@
 
 1.compile 'com.superbro:photoselecter:1.0.0'
  
-https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
+2.https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
