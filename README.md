@@ -62,7 +62,6 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         });
         ```
 5.重写onActivityResult方法：
-```java
 @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -79,7 +78,6 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             }
         }
     }
-```
 
 6.具体的请看源码： 
 
