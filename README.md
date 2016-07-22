@@ -60,14 +60,10 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             }
         });
-```
-
-
+        ```
 5.重写onActivityResult方法：
-
-
-@Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+```
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
@@ -82,9 +78,8 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             }
         }
     }
-    
+```
 
 6.具体的请看源码： 
-
 
 https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
