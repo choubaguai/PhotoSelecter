@@ -9,9 +9,6 @@
 鄙人手拙，收录的第一个自己的使用过还算不错的东西，类似微信选择照片。
 
 
-由于不会录制视频，所以没有动态图，不要吐槽，后面会补上的。
-
-
 使用方法很简单：
 
 
@@ -66,23 +63,22 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         ```
 5.重写onActivityResult方法：
 ```
-@Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                // 选择照片
-                case REQUEST_CAMERA_CODE:
-                    loadAdpater(data.getStringArrayListExtra(PhotoPickerActivity.EXTRA_RESULT));
-                    break;
-                // 预览
-                case REQUEST_PREVIEW_CODE:
-                    loadAdpater(data.getStringArrayListExtra(PhotoPreviewActivity.EXTRA_RESULT));
-                    break;
-            }
-        }
-    }
-    ```
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+     super.onActivityResult(requestCode, resultCode, data);
+     if (resultCode == RESULT_OK) {
+          switch (requestCode) {
+             // 选择照片
+             case REQUEST_CAMERA_CODE:
+                 loadAdpater(data.getStringArrayListExtra(PhotoPickerActivity.EXTRA_RESULT));
+                 break;
+             // 预览
+             case REQUEST_PREVIEW_CODE:
+                 loadAdpater(data.getStringArrayListExtra(PhotoPreviewActivity.EXTRA_RESULT));
+                 break;
+         }
+     }
+}
+```
 6.具体的请看源码： 
 
 https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
