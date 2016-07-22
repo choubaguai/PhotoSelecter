@@ -5,17 +5,23 @@
 
 大家好，第一次使用，请见谅。
 
+
 鄙人手拙，收录的第一个自己的使用过还算不错的东西，类似微信选择照片。
+
 
 由于不会录制视频，所以没有动态图，不要吐槽，后面会补上的。
 
+
 使用方法很简单：
 
-1.在你的module的build.gradle中添加下面这句代码：
 
+1.在你的module的build.gradle中添加下面这句代码：
+```
 compile 'com.superbro:photoselecter:1.0.1'
+```
 2.在你的manifests文件中添加下面两个activity：
 
+```
  <activity
             android:name="utils.PhotoPickerActivity"
             android:configChanges="orientation|screenSize"
@@ -23,12 +29,14 @@ compile 'com.superbro:photoselecter:1.0.1'
  <activity
             android:name="utils.PhotoPreviewActivity"
             android:theme="@style/PhotoPickerTheme"/>
+```            
 3.然后添加相机和访问文件的权限：
-
+```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
  <uses-permission android:name="android.permission.CAMERA"/>
+``` 
 4.在你的activity或者fragment里面调用：
-
+```
 mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -55,8 +63,9 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             }
         });
+        ```
 5.重写onActivityResult方法：
-
+```
 @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -73,4 +82,7 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             }
         }
     }
-6.具体的请看源码： https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
+    ```
+6.具体的请看源码： 
+
+https://github.com/choubaguai/PhotoSelecter/blob/master/photoselecter/src/main/java/com/superbro/myapplication/MainActivity.java
