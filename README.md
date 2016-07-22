@@ -60,8 +60,10 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             }
         });
-        ```
+```
+
 5.重写onActivityResult方法：
+
 ```
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
