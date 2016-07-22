@@ -14,7 +14,7 @@
 
 1.在你的module的build.gradle中添加下面这句代码：
 ```
-compile 'com.superbro:photoselecter:1.0.1'
+compile 'com.superbro:photoselecter:1.0.3'
 ```
 2.在你的manifests文件中添加下面两个activity：
 
