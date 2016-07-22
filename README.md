@@ -62,23 +62,23 @@ mRcyGridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         });
         ```
 5.重写onActivityResult方法：
-
 ```
-protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-     super.onActivityResult(requestCode, resultCode, data);
-     if (resultCode == RESULT_OK) {
-          switch (requestCode) {
-             // 选择照片
-             case REQUEST_CAMERA_CODE:
-                 loadAdpater(data.getStringArrayListExtra(PhotoPickerActivity.EXTRA_RESULT));
-                 break;
-             // 预览
-             case REQUEST_PREVIEW_CODE:
-                 loadAdpater(data.getStringArrayListExtra(PhotoPreviewActivity.EXTRA_RESULT));
-                 break;
-         }
-     }
-}
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) {
+                // 选择照片
+                case REQUEST_CAMERA_CODE:
+                    loadAdpater(data.getStringArrayListExtra(PhotoPickerActivity.EXTRA_RESULT));
+                    break;
+                // 预览
+                case REQUEST_PREVIEW_CODE:
+                    loadAdpater(data.getStringArrayListExtra(PhotoPreviewActivity.EXTRA_RESULT));
+                    break;
+            }
+        }
+    }
 ```
 
 6.具体的请看源码： 
