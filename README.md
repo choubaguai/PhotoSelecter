@@ -1,6 +1,9 @@
 # PhotoSelecter
-高仿微信图片选择器<\br>
-使用方法如下：<\br>
+高仿微信图片选择器：
+
+![image](https://github.com/YourAcountName/ProjectName/blob/master/GIFName.gif ) 
+
+使用方法如下：
 
 1.compile 'com.superbro:photoselecter:1.0.1'
  
